@@ -1,0 +1,19 @@
+with splash screen:
+pyinstaller --onefile --windowed --name tofpy --icon=icon.ico --splash splash.png main.py
+
+without the splah screen:
+pyinstaller --onefile --windowed --name tofpy --icon=icon.ico main.py
+
+ the app loads more quickly:
+ --onedir instead of --onefile
+
+============================================================================
+wishes:
+- add time domain plot possibility
+
+============================================================================
+
+- fix: normalization in offset window
+- fix: main_iso added to single frag.find due to find by pattern compatibility
+- feat jump to peak possition in the plot 'key j'
+- feat move peak to cursor possition (read new values to peak)
